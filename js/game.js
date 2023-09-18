@@ -111,7 +111,7 @@ function virarCarta({ target }){
 
 function vezJogada(aux){
     if(aux===true && jogador.innerHTML == localStorage.getItem('Nome Jogador 1')){
-        jogador.innerHTML = localStorage.getItem('Nome Jogador 1')
+        // jogador.innerHTML = localStorage.getItem('Nome Jogador 1')
         jogadorVez = 'Nome Jogador 1';
         document.getElementById("contador-acertos").textContent = localStorage.getItem('Acertos Jogador 1');
         document.getElementById("contador-erros").textContent = localStorage.getItem('Erros Jogador 1');
