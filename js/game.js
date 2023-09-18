@@ -57,7 +57,6 @@ function encontrarPar(jogador){
         segundaCarta = ''
         numeroAcertos++
         if(jogador === 'Nome Jogador 1'){
-            
             localStorage.setItem('Acertos Jogador 1',numeroAcertos)
 
         }else if ( jogador === 'Nome Jogador 2'){
