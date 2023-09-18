@@ -56,6 +56,7 @@ function removerInput(input,icone){
 btnStart.addEventListener('click', function(){
     var nomeInput1 = document.getElementById("nome-jogador1")
     localStorage.setItem("Nome Jogador 1", nomeInput1.value);
+    
     alert("Jogador salvo 1: " + nomeInput1.value);
 
     setTimeout(window.location.href= "game.html" ,1300)

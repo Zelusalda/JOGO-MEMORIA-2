@@ -61,7 +61,7 @@ function encontrarPar(jogador){
             localStorage.setItem('Acertos Jogador 1',numeroAcertos)
 
         }else if ( jogador === 'Nome Jogador 2'){
-            // numeroAcertos--;
+            numeroAcertos--;
             localStorage.setItem('Acertos Jogador 2',numeroAcertos)
         }
         encontrarFim()
@@ -198,7 +198,7 @@ function start() {
     listaCartas.forEach(card => card.classList.add('flip'))
     setTimeout(()=>{
         listaCartas.forEach(card => card.classList.remove('flip'))
-    },1400)
+    },3000)
 
     jogoIniciado = true; //Marca que o jogo foi iniciado
     clearInterval(cron);
