@@ -228,8 +228,6 @@ function reset() { /*A função não para realmente o jogo. Pares que foram enco
     //e remove a classe 'flip' de cada elemento.
     listaCartas.forEach(card => card.firstChild.classList.remove('carta-desativada')) //Remove o efeito de carta desativada
 
-    // numeroAcertos = 0;
-    // numeroErros = 0;
     localStorage.setItem('Acertos Jogador 1',0)
     localStorage.setItem('Acertos Jogador 2',0)
     localStorage.setItem('Erros Jogador 1',0)
