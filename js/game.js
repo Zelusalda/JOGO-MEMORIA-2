@@ -61,7 +61,7 @@ function encontrarPar(jogador){
             localStorage.setItem('Acertos Jogador 1',numeroAcertos)
 
         }else if ( jogador === 'Nome Jogador 2'){
-            numeroAcertos--;
+            // numeroAcertos--;
             localStorage.setItem('Acertos Jogador 2',numeroAcertos)
         }
         encontrarFim()
@@ -122,6 +122,12 @@ function vezJogada(aux){
         document.getElementById("contador-acertos").textContent = localStorage.getItem('Acertos Jogador 2');
         document.getElementById("contador-erros").textContent = localStorage.getItem('Erros Jogador 2');
         
+    }else if(aux==true && jogador.innerHTML == localStorage.getItem('Nome Jogador 2')){
+        
+        jogador.innerHTML = localStorage.getItem('Nome Jogador 2')
+        jogadorVez = 'Nome Jogador 2';
+        document.getElementById("contador-acertos").textContent = localStorage.getItem('Acertos Jogador 2');
+        document.getElementById("contador-erros").textContent = localStorage.getItem('Erros Jogador 2');
     }
     else{
         jogador.innerHTML = localStorage.getItem('Nome Jogador 1')
