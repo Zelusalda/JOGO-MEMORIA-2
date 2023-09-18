@@ -201,10 +201,10 @@ function start() {
 }
   
  
-function pausarJogo(){
-    jogoIniciado = false;
-    clearInterval(cron);
-}
+// function pausarJogo(){
+//     jogoIniciado = false;
+//     clearInterval(cron);
+// }
 
 function reset() { /*A função não para realmente o jogo. Pares que foram encontrados continuam marcados, e embora o 
   timer renicie, ele não é cancelado de verdade. Apenas zerado e volta a contar pouco tempo depois, porque a função 
