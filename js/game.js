@@ -27,8 +27,6 @@ const coresCartas = [
     "#FFC53B"
 ]
 
-
-
 function encontrarFim(){
     const cartasDesativadas = document.querySelectorAll('.carta-desativada');
 
@@ -174,7 +172,6 @@ function CarregarJogo() {
 window.onload = CarregarJogo();
 
 
-
 // tentativa cronometro
 
 
@@ -209,7 +206,7 @@ function pausarJogo(){
     clearInterval(cron);
 }
 
-  function reset() { /*A função não para realmente o jogo. Pares que foram encontrados continuam marcados, e embora o 
+function reset() { /*A função não para realmente o jogo. Pares que foram encontrados continuam marcados, e embora o 
   timer renicie, ele não é cancelado de verdade. Apenas zerado e volta a contar pouco tempo depois, porque a função 
   start() ainda está rodando. Seria bom se "reset" realmente parasse a função start() e o jogador precisasse apertar o 
   botão de iniciar novamente para jogar */
@@ -231,6 +228,8 @@ function pausarJogo(){
     //e remove a classe 'flip' de cada elemento.
     listaCartas.forEach(card => card.firstChild.classList.remove('carta-desativada')) //Remove o efeito de carta desativada
 
+    numeroAcertos = 0;
+    numeroErros = 0;
     localStorage.setItem('Acertos Jogador 1',0)
     localStorage.setItem('Acertos Jogador 2',0)
     localStorage.setItem('Erros Jogador 1',0)
