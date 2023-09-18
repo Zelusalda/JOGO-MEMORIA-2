@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game - Jogo</title>
+    <link rel="icon" type="image/x-icon" href="/img/memory-icon.png">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="https://kit.fontawesome.com/5181988b4b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <p>TURMA G82829 - DESENVOLVIMENTO DE SISTEMAS - SENAI CIMATEC</p>
+        <nav>
+            <button class="btn-git"><a href="https://github.com/melanieesilva/MemoryGame" target="_blank">Repositório GitHub</a></button>
+            <button class="btn-feedback"><a href="" target="_blank">Feedback :D</a></button>
+        </nav>
+    </header>
+    <section>
+        <div class="title">
+            <h1>BEM VINDO AO MEMORY GAME</h1>
+            <p>Adicione seus jogadores. Máx: 2</p>
+        </div>
+        <div class="input-jogador">
+            <form id="form-jogador">
+                <input type="text" id="nome-jogador1" placeholder="Insira um nome...">
+                <button type="button" onclick="adicionarInput()" class="btn-adicionar-jogador" id="btn-adicionar-jogador"><i class="fa-solid fa-circle-plus" style="color: #000000;"></i></button>
+            </form>
+            
+        </div>
+        <button class="btn-comecar-jogo" id="btn-comecar-jogo">COMEÇAR JOGO</button>
+    </section>
+    <script src="/js/login.js"></script>
+</body>
+</html>

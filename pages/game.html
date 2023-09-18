@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game - Jogo</title>
+    <link rel="icon" type="image/x-icon" href="/img/memory-icon.png">
+    <link rel="stylesheet" href="/css/game.css">
+    <script src="https://kit.fontawesome.com/5181988b4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <p>TURMA G82829 - DESENVOLVIMENTO DE SISTEMAS - SENAI CIMATEC</p>
+        <nav>
+            <button class="btn-git"><a href="https://github.com/melanieesilva/MemoryGame" target="_blank">Repositório
+                    GitHub</a></button>
+            <button class="btn-feedback"><a href="" target="_blank">Feedback :D</a></button>
+        </nav>
+        <!-- <button> <a href="/index.html"></a></button> -->
+    </header>
+    <section>
+        <aside>
+            <div id="tempo">
+                <p>Seu tempo</p>
+                <form name="form_main">
+                    <div>
+                      <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
+                    </div>
+                  
+                    <br />
+                  
+                    <button type="button" id="btn-cartoon" name="start">start</button>
+                    <button type="button" id="btn-cartoon" name="reset">reset</button>
+                    <button type="button" id="btn-cartoon" name="pause">pause</button>
+                  </form>
+            </div>
+            <div id="vez">
+                <p>Vez do jogador</p>
+                <h2 id="jogador-vez">MARIA</h2>
+            </div>
+            <div class="placar"> <!-- Placar para exibir quantos acertos e erros o jogador teve em sua partida -->
+                <p>Número de acertos: <span id="contador-acertos"></span></p>
+                <p>Número de erros: <span id="contador-erros"></span></p>
+            </div>
+        </aside>
+        <article>
+
+        </article>
+    </section>
+    <footer>
+        <div id="efeito-sonoro">
+            <button id="musica"><i class="fa-solid fa-music"></i></button>
+            <button id="som"><i class="fa-solid fa-volume-high"></i></button>
+        </div>
+        <div id="temas">
+            <p>Temas</p>
+            <button id="btn-cartoon">Cartoon</button>
+            <button id="btn-monica">Monica</button>
+            <button id="btn-disney">Disney</button>
+        </div>
+    </footer>
+    <div class="modal" id="modal">
+        
+    </div>
+    <script src="/js/game.js"></script>
+</body>
+
+</html>
